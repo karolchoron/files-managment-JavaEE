@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Uploading PPT files</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style/css/components.css">
+        <link rel="stylesheet" href="Style/css/icons.css">
+        <link rel="stylesheet" href="Style/css/responsee.css">
+        <link rel="stylesheet" href="Style/css/style_css.css">
+
+    </head>
+    <body>
+        <div>
+            <br>
+            <form class ="powrotform" action="./index.html">
+                    <button class='button rounded-full-btn reload-btn s-2 margin-bottom' type="submit">Back to main webpage</button>
+            </form>
+            <br><br><br>
+            <h5> Upload files on server</h5>
+            
+            
+            <form class ="dodawanieform" action="./Dodawanie" method="post" enctype="multipart/form-data">
+                <input type = "file" name="file_upload"> <br><br>
+                Description (max 300 characters): 
+                <input type = "text" name="opis_upload"> <br><br>
+                <button class='button rounded-full-btn reload-btn s-2 margin-bottom' type="submit">Upload file</button>
+            </form>
+            
+            
+            </div>
+    </body>
+</html>
