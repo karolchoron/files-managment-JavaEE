@@ -127,11 +127,7 @@ public class PptQuery {
         fileInputStream.close();
         return new javax.sql.rowset.serial.SerialBlob(bFile);
     }
-    
-    
-    // https://mkyong.com/hibernate/hibernate-save-image-into-database/
-    //zapisz plik w bazie
-    
+        
     
     public int uploadFile(Part filePart, String nazwaPliku, int id, String opis){
         if(nazwaPliku.endsWith("ppt") || nazwaPliku.endsWith("pptx")){
@@ -141,9 +137,6 @@ public class PptQuery {
             
             InputStream fileContent = filePart.getInputStream();
             Blob fileBlob = Hibernate.getLobCreator(session).createBlob(fileContent, filePart.getSize());
-            
-            //File file = new File("/home/student/NetBeansProjects/L5_projekt/"+nazwaPliku);
-            //Blob blokDanych = zamianaFileNaBlob(file);
             
             Ppt plikiPpt = new Ppt();
             
@@ -157,8 +150,7 @@ public class PptQuery {
             session.getTransaction().commit();
             session.close();
             tx.commit();
-            
-            //return 0;
+
                          
             }catch (Exception e) {
                  //e.printStackTrace();
@@ -191,14 +183,12 @@ public class PptQuery {
             String nazwaPliku = plikppt.getNazwa();
         
             InputStream inputStream = dane.getBinaryStream();
-            
-            //pobieram sciezke do katalogu pobierania uzytkownika uzywajacego aplikacji
+
             String katalogPobieraniaSciezka = Paths.get(System.getProperty("user.home"), "Downloads").toString();
-            //lacze sciezke folderu z nazwa pliku do pobrania
+
             String sciezkaPlik = katalogPobieraniaSciezka+File.separator+nazwaPliku;
             FileOutputStream fos = new FileOutputStream(sciezkaPlik);
-            
-            //FileOutputStream fos = new FileOutputStream("/home/student/Downloads/"+nazwaPliku);
+
             int daneDlugosc = (int)dane.length();
             byte[] buffer = new byte[daneDlugosc];
             int bytesRead = -1;

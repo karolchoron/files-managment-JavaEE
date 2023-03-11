@@ -1,0 +1,14 @@
+Sat Jan 28 14:04:31 CET 2023 : Serwer sieciowy Apache Derby - 10.13.1.1 - (1765088) uruchomiony i gotowy do zaakceptowania połączeń na porcie 1527 w {3} 
+----------------------------------------------------------------
+Sat Jan 28 14:04:32 CET 2023:
+ Uruchamianie wersji The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088) systemu Derby: instancja a816c00e-0185-f87a-be4c-000059d9bca0
+w katalogu bazy danych /home/student/NetBeansProjects/L5_projekt/Baza/projektbaza sun.misc.Launcher$AppClassLoader@4d7e1886 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_222-8u222-b10-1~deb9u1-b10
+user.dir=/home/student/Payara_Server/javadb
+os.name=Linux
+os.arch=amd64
+os.version=4.9.0-11-amd64
+derby.system.home=/home/student/NetBeansProjects/L5_projekt/Baza
+Uruchomiono program ładujący klasę bazy danych - derby.database.classpath=''

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2023-01-25 13:21:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Hiber.Ppt" table="PPT" schema="APP" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="nazwa" type="string">
+            <column name="NAZWA" length="100" />
+        </property>
+        <property name="dane" type="blob">
+            <column name="DANE" />
+        </property>
+        <property name="opis" type="string">
+            <column name="OPIS" length="300"/>
+        </property>
+    </class>
+</hibernate-mapping>

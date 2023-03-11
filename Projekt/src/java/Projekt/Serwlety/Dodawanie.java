@@ -14,10 +14,8 @@ import javax.servlet.http.Part;
 
 @WebServlet(name = "Dodawanie", urlPatterns = {"/Dodawanie"})
 @MultipartConfig(
-        fileSizeThreshold = 1024 * 1024 * 10, // pliki mniejsze niz 10 MB beda przetwarzane w pamieci a wieksze na dysku 
-        maxFileSize = 1024 * 1024 * 50 // max rozmiar pliku 50 MB    
-        
-        //maxRequestSize = 1024 * 1024 * 100  //maksymalny rozmiar żądania 100 MB         
+        fileSizeThreshold = 1024 * 1024 * 10,
+        maxFileSize = 1024 * 1024 * 50     
         )
         
 
@@ -51,7 +49,6 @@ public class Dodawanie extends HttpServlet {
             
             Part filePart = request.getPart("file_upload");
             
-            //pobieram nazwe pliku ktorego bede wgrywal
             String nazwaPliku = filePart.getSubmittedFileName();
             
             int najwiekszeAktualneId = new Hiber.PptQuery().najwiekszeId();
@@ -61,12 +58,6 @@ public class Dodawanie extends HttpServlet {
             
             int dlugoscOpisu = opis.length();
             
-            
-            /*
-            out.println("najwiekszeAktualneId: "+najwiekszeAktualneId);
-            out.println("idNowegoPliku: "+idNowegoPliku);
-            out.println("nazwaPliku: "+nazwaPliku);
-            */
             
             
             PptQuery wgrywaniePliku = new PptQuery();
