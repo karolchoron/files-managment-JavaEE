@@ -1,4 +1,4 @@
-# pptfilesproject
+# PPT Files Managment Application in JavaEE
 
 PPT FILE STORAGE PROJECT / PROJEKT PRZECHOWYWANIA PLIKÓW PPT
 
