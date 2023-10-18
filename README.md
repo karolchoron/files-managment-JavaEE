@@ -1,6 +1,6 @@
 # PPT Files Managment Application in JavaEE
 
-PPT FILE STORAGE PROJECT / PROJEKT PRZECHOWYWANIA PLIKÓW PPT
+PPT FILES MANAGMENT PROJECT / PROJEKT PRZECHOWYWANIA PLIKÓW PPT
 
 A student project made in JavaEE technology, whose task is to manage files in a database. <br />
 The program allows the following operations:
